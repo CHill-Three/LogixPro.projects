@@ -1,0 +1,10 @@
+Using XIC instruction, the instruction is only activated when the memory location is one. 
+So, when the push button is not pressed, the logic state is zero, the instruction is false, and the light will not turn on. 
+When the push button is pressed, meaning the logic state now is true, equals one, then the instructions are highlighted, and the light will turn on according to the continuity. 
+XIC, Examine If Close instruction is true when the logic state equals 1. 
+Now, with the Examine If Open instruction: XIO instruction acts the opposite way. 
+It is activated when the logic state is zero and not when the logic state is one. 
+When the push button is not pressed, the logic state is 0, and since we are using XIO instruction, it's activated, and the light will be on. 
+When the push button is pressed, the logic state is one, true, meaning the XIO instruction is false and is not highlighted, and the light will not turn on. 
+XIO is true when its logic state equals 0. 
+This means that the tag assigned to the XIO instruction is active.
