@@ -6,8 +6,6 @@ Welcome to my LogixPro 500 PLC Sim (RSLogix 500 Emulator) repository created on 
 <!-- DIVIDER ---------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Project 1: Simple I/O with XIC and XIO gates
 
-### Project 1: Simple I/O with XIC and XIO gates <a name="Project 1: Simple I/O with XIC and XIO gates"></a>
-
 ![XIC_XIOButtons](https://raw.githubusercontent.com/CHill-Three/logixpro.projects/main/Project%201%3A%20Simple%20I-O%20with%20XIC%20and%20XIO%20gates/XIC_XIOButtons.PNG?raw=true "XIC_XIOButtons")
 
 #### Description: 
