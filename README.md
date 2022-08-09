@@ -16,15 +16,18 @@ Using XIC instruction, the instruction is only activated when the memory locatio
 ![StopButton](https://raw.githubusercontent.com/CHill-Three/logixpro.projects/main/Project%202%3A%20Stop%20Button%20Example/StopButton.PNG?raw=true "StopButton")
 
 #### Description: 
+In the beginning, nothing is activated. But as soon as the pushbutton is pressed, the instruction is highlighted, and the conveyor starts. Now, the memory address of the conveyor within PLC software equals one. So as soon as the pushbutton is released, the Ladder Logic will use the CLN instruction to keep the output on, to keep the conveyor working. Since we're using a normally open contact for the Stop Pushbutton, we will use an XIO instruction to preserve the continuity. Now, in a normal situation, the Stop pushbutton is not pressed. It's a normally open contact. So the memory location equals zero. And when using an XIO instruction, the instruction is highlighted when the memory location is zero. When both inputs are on, the output is on as a result. And the CLN instruction works the same way. The output will stay on even if the Start pushbutton is released. As soon as the operator presses the Stop pushbutton, remember it's a normally open contact, so it changes the state to one. And this means the XIO instruction is not activated anymore. And as a result, the conveyor stops.  
 <!-- DIVIDER ---------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Project 3: Conveyor Example
 
 ![Conveyor](https://raw.githubusercontent.com/CHill-Three/logixpro.projects/main/Project%203%3A%20Conveyor%20Example/Conveyor.PNG?raw=true "Conveyor")
 
-#### Description: 
+#### Description:
+In this example, we have one input and two outputs. The input, in this case, is the conveyor memory bit. Remember that inputs and outputs can be in internal bits. So now, using the memory as its location of the conveyor bit to turn on the two lights. Since we have multiple outputs, we add them in parallel. Now once the operator pushes the start push button, the conveyor starts. As soon as the conveyor starts, the two lights turn on. The last thing to program is adding the red light when the conveyor is not working. For this task, the exact memory location of the conveyor bit. But this time, we use an XIO instruction to indicate that the output is only on when the conveyor is not working when the conveyor is not on. Note that the same address for the conveyor for the two green lights — the same address as the conveyor to connect it to the red light. The only difference is that an XIO instruction was used. For the demonstration, the first light is yellow to indicate that the conveyor is on. The second light is the first green light. The third light is for the second green light.
 <!-- DIVIDER ---------------------------------------------------------------------------------------------------------------------------------------------------------->
 ## Project 4: Simple Latching and Unlatching Example
 
 ![Latching-Unlatching](https://raw.githubusercontent.com/CHill-Three/logixpro.projects/main/Project%204%3A%20Simple%20Latching%20and%20Unlatching%20Example/Latching-Unlatching.PNG?raw=true "Latching-Unlatching")
 
-#### Description: 
+#### Description:
+An output latching instruction is used to maintain or latch output on, even if the input condition changes. So, if any run has a latching instruction, the output reference to the latching instruction is turned on, even if the run logic or the PLC power is lost. Latch, to latch output on; the output stays on until unlatch instruction becomes true. Unlatch instruction to unlatch a latched-on instruction with the same address.
